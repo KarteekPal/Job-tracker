@@ -15,9 +15,10 @@ function Dashboard() {
 
   const headers = { Authorization: `Bearer ${token}` }
 
-  useEffect(() => {
-    fetchJobs()
-  }, [])
+  // eslint-disable-next-line
+useEffect(() => {
+  fetchJobs()
+}, [])
 
   const fetchJobs = async () => {
     try {
